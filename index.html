@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Home Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by GetTemplates.co" />
+	<meta name="keywords"
+		content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="GetTemplates.co" />
+
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:site_name" content="" />
+	<meta property="og:description" content="" />
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Themify Icons-->
+	<link rel="stylesheet" href="css/themify-icons.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+
+
+
+
+
+	<style>
+		p {
+			text-align: center;
+			font-size: 20px;
+			margin-top: 0px;
+		}
+
+		/* <!-- Marquee --> */
+		.example1 {
+			height: 50px;
+			overflow: hidden;
+			position: relative;
+		}
+
+		.example1 h3 {
+			font-size: 3em;
+			color: limegreen;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			line-height: 50px;
+			text-align: center;
+			/* Starting position */
+			-moz-transform: translateX(100%);
+			-webkit-transform: translateX(100%);
+			transform: translateX(100%);
+			/* Apply animation to this element */
+			-moz-animation: example1 15s linear infinite;
+			-webkit-animation: example1 15s linear infinite;
+			animation: example1 15s linear infinite;
+		}
+
+		/* Move it (define the animation) */
+		@-moz-keyframes example1 {
+			0% {
+				-moz-transform: translateX(100%);
+			}
+
+			100% {
+				-moz-transform: translateX(-100%);
+			}
+		}
+
+		@-webkit-keyframes example1 {
+			0% {
+				-webkit-transform: translateX(100%);
+			}
+
+			100% {
+				-webkit-transform: translateX(-100%);
+			}
+		}
+
+		@keyframes example1 {
+			0% {
+				-moz-transform: translateX(100%);
+				/* Firefox bug fix */
+				-webkit-transform: translateX(100%);
+				/* Firefox bug fix */
+				transform: translateX(100%);
+			}
+
+			100% {
+				-moz-transform: translateX(-100%);
+				/* Firefox bug fix */
+				-webkit-transform: translateX(-100%);
+				/* Firefox bug fix */
+				transform: translateX(-100%);
+			}
+		}
+
+		/* < !-- Marquee --> */
+	</style>
+
+	<style>
+		.button {
+			background-color: #4CAF50;
+			/* Green */
+			border: none;
+			color: white;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+		}
+
+		.button2 {
+			background-color: #008CBA;
+		}
+
+		/* Blue */
+		.button3 {
+			background-color: #f44336;
+		}
+
+		/* Red */
+		.button4 {
+			background-color: #e7e7e7;
+			color: black;
+		}
+
+		/* Gray */
+		.button5 {
+			background-color: #555555;
+		}
+
+		/* Black */
+
+		/* Style the body */
+		body {
+			font-family: Arial;
+			margin: 0;
+		}
+
+		/* Header/Logo Title */
+		.header {
+			padding: 0px;
+			text-align: center;
+			/* background: #337ab7; */
+			background: #2c9193;
+			color: white;
+			font-size: 30px;
+		}
+
+		/* Page Content */
+		.content {
+			padding: 20px;
+		}
+
+
+		.header2 {
+			padding: 0px;
+			text-align: center;
+			background: lightgrey;
+			color: white;
+			font-size: 30px;
+		}
+
+		/* Page Content */
+		.content {
+			padding: 20px;
+		}
+	</style>
+
+
+
+
+	<!-- Image slider css start-->
+	<style>
+		.mySlides {
+			display: none;
+		}
+
+		img {
+			vertical-align: middle;
+		}
+
+		/* Slideshow container */
+		.slideshow-container {
+			max-width: auto;
+			position: relative;
+			margin: auto;
+		}
+
+
+		/* The dots/bullets/indicators */
+		.dot {
+			height: 15px;
+			width: 15px;
+			margin: 0 2px;
+			background-color: #bbb;
+			border-radius: 50%;
+			display: inline-block;
+			transition: background-color 0.7s ease;
+		}
+
+
+
+		/* Fading animation */
+		.fade {
+			animation-name: fade;
+			animation-duration: 1.5s;
+		}
+
+		@keyframes fade {
+			from {
+				opacity: .4
+			}
+
+			to {
+				opacity: 1
+			}
+		}
+
+		/* On smaller screens, decrease text size */
+		@media only screen and (max-width: 300px) {
+			.text {
+				font-size: 11px
+			}
+		}
+	</style>
+
+
+	<!-- Image slider css ends -->
+
+
+</head>
+
+<body>
+
+
+	<div id="page">
+
+		<div class="col-md-12 header">
+			<div class="col-md-2" align="left">
+				<a href="https://www.iitr.ac.in/" target="_blank;"><img src="images/iitr_logo.png" height="200"
+						width="200"></a>
+			</div>
+			<div class="col-md-8" align="center">
+				<h5 style="color:#fff; font-size:24px;"><strong> Indo-French Workshop on <br> Innovative Numerical Methods for
+						Modern Engineering Problems
+						<br> Organized by <br> Department of Mathematics, IIT Roorkee <br> January 06-10, 2025</strong></h5>
+			</div>
+			<div class="col-md-2">
+				<a href="https://www.iitr.ac.in/" target="_blank;"><img src="images/indo-french copy.webp" height="220" width="270"></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-md-12">
+		<nav class="gtco-nav sticky-banner" role="navigation">
+			<div class="gtco-container">
+
+				<div class="row">
+					<div class="col-xs-12 text-center menu-1">
+						<ul>
+
+							<li class="active"><a href="index.html">Home&#9660;</a></li>
+							<li class=""><a href="ks.html">Keynote Speakers&#9660;</a></li>
+							<li><a href="registration.html">Registration&#9660;</a></li>
+							<li><a href="accommodation.html">Accommodation&#9660;</a></li>
+							<li><a href="howtorech.html">How to reach&#9660;</a></li>
+							<li><a href="nearby.html">Near By Attraction&#9660;</a></li>
+
+
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</nav>
+
+
+	</div>
+
+
+
+
+
+
+	<div class="slideshow-container">
+
+		<div class="mySlides fade">
+			<div class="numbertext">1 / 3</div>
+			<img src="cods24.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">2 / 3</div>
+			<img src="1.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">3 / 3</div>
+			<img src="2.png" style="width:100%">
+		</div>
+
+	</div>
+	<br>
+
+	<div style="text-align:center">
+		<span class="dot"></span>
+		<span class="dot"></span>
+		<span class="dot"></span>
+	</div>
+
+	<script>
+		let slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+			let i;
+			let slides = document.getElementsByClassName("mySlides");
+			let dots = document.getElementsByClassName("dot");
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			slideIndex++;
+			if (slideIndex > slides.length) { slideIndex = 1 }
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex - 1].style.display = "block";
+			dots[slideIndex - 1].className += " active";
+			setTimeout(showSlides, 2000); // Change image every 2 seconds
+		}
+	</script>
+
+
+	<div class="flex-section gtco-gray-bg">
+		<div class="col-3">
+			<div class="text">
+
+				<div class="row row-pb-sm">
+					<div class="col-md-10 col-md-offset-1" style="margin-top:50px;">
+
+						<h3 style="color:#056FF8;"><strong><a href="https://iitr.ac.in"> ABOUT INDIAN INSTITUTE OF
+									TECHNOLOGY ROORKEE</a></strong></h3>
+
+						<p style="text-align:justify;">IIT Roorkee erstwhile Thomason Engineering College, the first
+							engineering institution of India is now one of the leading educational institutes in the
+							country imparting quality technical education and overall development of the society. IIT
+							Roorkee (earlier known as the University of Roorkee) has celebrated 175 years (1847-2022) of
+							its rich educational heritage. The Roorkee College was established in 1847 AD as the First
+							Engineering College in the British Empire. The College was renamed as The Thomason College
+							of Civil Engineering in 1854. It was given the status of University by Act No. IX of 1948 of
+							the United Province (Uttar Pradesh) in recognition of its performance and its potential and
+							keeping in view the needs of post-independent India. Pandit Jawahar Lal Nehru, the first
+							Prime Minister of India, presented the Charter in November 1949 elevating the erstwhile
+							college to the First Engineering University of Independent India. On the 21st of September
+							2001, the University was declared an institute of national importance, by the Government of
+							India, changing its status from University of Roorkee to Indian Institute of Technology
+							Roorkee. Thus, another jewel was added to the already glittering crown in the History of
+							this Institute.</p>
+						</br>
+						</br>
+
+						<h3 style="color:#056FF8;"><strong><a
+									href="https://iitr.ac.in/Departments/Mathematics%20Department/Home.html">ABOUT
+									MATHEMATICS DEPARTMENT </a></strong></h3>
+						<div class="col-md-1 col-xs-6">
+							<a href="https://www.iitr.ac.in/" target="_blank;"><img src="3.jpeg"></a>
+						</div>
+						<p style="margin-left: 300px; text-align:justify;">The Department of Mathematics from its
+							inception in 1960 has grown into an active centre of quality teaching and research. Today it
+							stands as one of the leading departments in the country, well known for its excellence in
+							teaching and research. The Department runs five years BS-MS Program in Mathematics and
+							Computing, two year M.Sc. and PhD programs in Mathematics. The faculty members of the
+							Department are actively carrying high quality research in different areas of pure
+							mathematics, applied and computational mathematics, operations research and statistics. The
+							research activity in the department is well recognized by NBHM, DST, SERB, CSIR, ISRO, DRDO
+							and many more agencies, and a number of research projects funded by national and
+							international agencies are in progress in the department.</p></br></br>
+
+						<h3 style="color:#056FF8;"><strong>ABOUT THE WORKSHOP</strong></h3>
+						<div class="col-md-1 col-xs-6">
+							<a href="https://www.iitr.ac.in/" target="_blank;"><img src="images/iitr_logo.png"
+									height="200" width="200"></a>
+						</div>
+						<p style="margin-left: 300px; text-align:justify;"> The workshop, titled "Innovative Numerical
+							Methods for Modern Engineering Problems," aims to tackle the challenges posed by complex
+							engineering tasks that require advanced numerical methods for solving Partial Differential
+							Equations (PDEs). The workshop will bring together researchers, practitioners, and students
+							to explore cutting-edge techniques that can provide accurate solutions while minimizing
+							computational effort. Key topics include the development of numerical methods for complex
+							geometries, certified error control techniques to ensure solution accuracy, and the use of
+							Artificial Intelligence (AI) in expediting simulations. By combining traditional numerical
+							analysis with AI, the workshop seeks to critically assess the potential and limitations of
+							AI-based simulations. Participants will gain insight into the strengths of various methods,
+							including Virtual Element Methods (VEMs), discontinuous Galerkin (dG) methods, and Hybrid
+							High-Order (HHO) methods. In addition to lectures and discussions, the workshop will
+							emphasize practical approaches to these problems, encouraging attendees to refine their
+							skills and contribute to the advancement of innovative digital technologies in the field of
+							engineering.
+						</p><br /><br />
+
+						<h3 style="color:#056FF8;"><strong>THEMATIC AREA</strong></h3>
+						<p style="text-align:justify;">
+							<span style="color:#056FF8;">&#8226;</span>&nbsp;Numerical Analysis and Computational
+							Algorithms for PDEs</br>
+							<span style="color:#056FF8;">&#8226;</span>&nbsp;Finite Element Methods: Theory and Computation</br>
+							<span style="color:#056FF8;">&#8226;</span>&nbsp;Polytopal Methods such as discontinuous Galerkin (dG) methods, Hybrid High-Order (HHO) methods, Virtual Element Methods (VEMs)</br>
+							<span style="color:#056FF8;">&#8226;</span>&nbsp;Error control and mesh adaptivity driven by a posteriori error estimators</br>
+							<span style="color:#056FF8;">&#8226;</span>&nbsp;AI-enhanced numerical simulations for PDEs</br>
+							<span style="color:#056FF8;">&#8226;</span>&nbsp;Other relevant areas</br>
+						</p>
+
+						</p><br /><br />
+						<h3 style="color:#056FF8;"><strong>ABSTRACT BOOK</strong></h3>
+						<!-- <a href=""> -->
+						<h3 style="color:Black;">Will be uploaded soon!</h3>
+						</a>
+						<!-- </br> -->
+
+						</p>
+						<br />
+						<h3 style="color:#056FF8;"><strong>SCHEDULE</strong></h3>
+						<!-- <a href=""> -->
+						<h3 style="color:Black;">Will be uploaded soon!</h3>
+						</a>
+						</br>
+
+						<h3 style="color:#056FF8;"><strong>IMPORTANT DATES</strong></h3>
+						<p style="text-align:justify;">
+							<span style="color:#056FF8;">&#8226;</span>&nbsp;Early registration start :- <b>5th October,
+								2024 </b>
+							<br>
+							<span style="color:#056FF8;">&#8226;</span>&nbsp;Registration end on :- <b>5th December,
+								2024 </b>
+							<br>
+							<span style="color:#056FF8;">&#8226;</span>&nbsp;Selection confirmation :- <b>10th December,
+								2024</b>
+							<br>
+							<span style="color:#056FF8;">&#8226;</span>&nbsp;Workshop start on :- <b>6th January,
+								2025</b>
+								<br>
+								<span style="color:#056FF8;">&#8226;</span>&nbsp;Workshop end on :- <b>10th January,
+									2025</b>
+						</p>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div id="gtco-subscribe">
+		<div class="gtco-container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+					<!-- <h2><strong>Indo-French Workshop</strong></h2> -->
+					<h3> <b>Indo-French Workshop on <br> Innovative Numerical Methods for Modern Engineering Problems</b></h3>
+					<p>You can download the brochure of the workshop here!.</p>
+				</div>
+			</div>
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2">
+					<form class="form-inline">
+						<div class="col-md-4 col-sm-9">
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<button type="submit" class="btn btn-default btn-block"> <a href="cods-new.pdf">Click
+									here</a></button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div><br /><br />
+
+
+	<div id="gtco-subscribess">
+		<div class="gtco-container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+					<h2><strong>Our Sponsor</strong></h2>
+					<h3> <strong>Indo-French Centre for the Promotion of Advanced Research (IFCPAR/CEFIPRA)</strong></h3>
+				</div>
+			</div>
+
+
+			<div class="row">
+
+				<div class="col-lg-3 col-md-2 col-sm-3">
+					<a href="#" class="gtco-card-item">
+
+
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-2 col-sm-3">
+					<a href="#" class="gtco-card-item">
+						<figure>
+							<div class="overlay"><i class="ti-plus"></i></div>
+							<img src="images/CEFIPRA.jpeg" alt="Image" class="img-responsive">
+						</figure>
+						<div class="gtco-text">
+							<h2 style="font-size:19px;"><strong>CEFIPRA</strong></h2>
+							
+
+						</div>
+
+
+					</a>
+				</div>
+				
+
+
+			</div>
+
+
+
+			<div class="card" align="center">
+				<p><button>Contact</button></p>
+				<p class="title">Email: indofrench@ma.iitr.ac.in</p>
+				<p>Department of Mathematics, IIT Roorkee</p>
+				<a href="#"><i class="fa fa-dribbble"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-linkedin"></i></a>
+				<a href="#"><i class="fa fa-facebook"></i></a>
+
+			</div>
+
+			<div class="gototop js-top">
+				<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+			</div>
+
+			<!-- jQuery -->
+			<script src="js/jquery.min.js"></script>
+			<!-- jQuery Easing -->
+			<script src="js/jquery.easing.1.3.js"></script>
+			<!-- Bootstrap -->
+			<script src="js/bootstrap.min.js"></script>
+			<!-- Waypoints -->
+			<script src="js/jquery.waypoints.min.js"></script>
+			<script src="js/sticky.js"></script>
+			<!-- Carousel -->
+			<script src="js/owl.carousel.min.js"></script>
+			<!-- countTo -->
+			<script src="js/jquery.countTo.js"></script>
+
+			<!-- Stellar Parallax -->
+			<script src="js/jquery.stellar.min.js"></script>
+
+			<!-- Magnific Popup -->
+			<script src="js/jquery.magnific-popup.min.js"></script>
+			<script src="js/magnific-popup-options.js"></script>
+
+			<!-- Main -->
+			<script src="js/main.js"></script>
+
+</body>
+
+</html>
